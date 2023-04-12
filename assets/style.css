@@ -25,6 +25,7 @@ html {
 
 img {
   max-width: 100%;
+  background: var(--secondary-color);
 }
 
 a {
@@ -172,13 +173,13 @@ span {
 /* hover effects */
 
 header nav a:hover,
-footer section a:hover{
-    color: var(--secondary-color);
+footer section a:hover {
+  color: var(--secondary-color);
 }
 
-main article a img:hover{
-    filter: opacity(0.3);
-    transition-duration: 1s;
+main article a img:hover {
+  filter: opacity(0.3);
+  transition-duration: 1s;
 }
 
 /* mediaqueries */
