@@ -1,0 +1,210 @@
+@font-face {
+  font-family: Karla;
+  src: url(./Karla-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Karla-Italic;
+  src: url(./Karla-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+  --primary-color: #323a45;
+  --secondary-color: #848484;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+p,
+a {
+  font-family: "Karla";
+  font-weight: 500;
+}
+
+h1,
+h2 {
+  font-size: 1.6rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+}
+
+h2 {
+  color: var(--secondary-color);
+}
+
+p,
+a {
+  font-size: 1.4em;
+  line-height: 2rem;
+}
+
+.wrapper {
+  padding: 0 12rem;
+}
+
+/* header */
+
+header {
+  height: 18vh;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  font-size: 1.8rem;
+  font-weight: 750;
+}
+
+header nav div a {
+  font-size: 1.4rem;
+  padding: 2rem;
+  margin: 0 0 0 2rem;
+}
+
+/* burger */
+
+.burger {
+  position: fixed;
+  top: 5rem;
+  right: 4rem;
+  display: none;
+}
+
+.burger div {
+  height: 0.5rem;
+  width: 4rem;
+  margin: 0 0 0.7rem 0;
+  background-color: var(--primary-color);
+}
+
+/* main */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.5rem 3rem;
+}
+
+.big-product {
+  grid-column: 1 / span 3;
+}
+
+main article div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main article a img {
+  margin: 0 0 2rem 0;
+}
+
+/* footer */
+
+footer {
+  min-height: 10vh;
+  padding: 10rem 0 0 0;
+}
+
+.foot-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer section {
+  margin: 0 7rem 4rem 0;
+}
+
+footer section h2 {
+  color: black;
+  margin: 0 0 3rem 0;
+}
+
+footer section a {
+  display: block;
+}
+
+.ruby,
+.newsletter {
+  width: 30rem;
+}
+
+.copyright {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  margin: 0 0 2rem 0;
+}
+
+span {
+  font-weight: 800;
+}
+
+.worry {
+  font-family: "Karla-Italic";
+}
+
+/* hover effects */
+
+header nav a:hover,
+footer section a:hover{
+    color: var(--secondary-color);
+}
+
+main article a img:hover{
+    filter: opacity(0.3);
+    transition-duration: 1s;
+}
+
+/* mediaqueries */
+
+@media only screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .big-product {
+    grid-column: 1;
+  }
+
+  nav div {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+
+  .foot-wrapper {
+    display: block;
+  }
+
+  .wrapper {
+    padding: 0 4rem;
+  }
+}
