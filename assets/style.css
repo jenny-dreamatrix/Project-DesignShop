@@ -25,7 +25,6 @@ html {
 
 img {
   max-width: 100%;
-  background: var(--secondary-color);
 }
 
 a {
@@ -117,13 +116,14 @@ main {
   grid-column: 1 / span 3;
 }
 
+.img-wrapper {
+  background-color: rgb(240, 240, 240);
+  margin: 0 0 2rem 0;
+}
+
 main article div {
   display: flex;
   justify-content: space-between;
-}
-
-main article a img {
-  margin: 0 0 2rem 0;
 }
 
 /* footer */
